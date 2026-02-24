@@ -1,0 +1,12 @@
+{
+  "name": "cv-exporter",
+  "version": "1.0.0",
+  "description": "Export HTML CV to PDF",
+  "main": "export.js",
+  "scripts": {
+    "export": "node export.js"
+  },
+  "dependencies": {
+    "puppeteer": "^22.0.0"
+  }
+}
