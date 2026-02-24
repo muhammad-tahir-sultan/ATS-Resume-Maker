@@ -315,27 +315,29 @@ body {
         background: white;
         -webkit-print-color-adjust: exact;
         print-color-adjust: exact;
+        overflow: visible !important;
     }
 
     .cv-container {
         box-shadow: none;
         border: none;
-        padding: 20px 40px !important;
-        /* Aggressively reduced padding */
+        padding: 25px 40px !important;
         width: 100% !important;
         max-width: none !important;
         margin: 0 !important;
         border-radius: 0;
+        overflow: visible !important;
     }
 
     .grid-layout {
-        display: block !important;
-        /* Single column for ATS parsing */
+        display: grid !important;
+        grid-template-columns: 1fr 260px !important;
+        gap: 30px !important;
     }
 
     .main-column,
     .side-column {
-        width: 100% !important;
+        width: auto !important;
         display: block !important;
     }
 
@@ -393,13 +395,13 @@ body {
         font-size: 0.65rem !important;
     }
 
-    /* Most important: aggressive font scaling to fit one page */
+    /* Premium font scaling for single page */
     html {
-        font-size: 11px !important;
+        font-size: 11.5px !important;
     }
 
     .name {
-        font-size: 2.2rem !important;
+        font-size: 2.8rem !important;
     }
 
     .role {
