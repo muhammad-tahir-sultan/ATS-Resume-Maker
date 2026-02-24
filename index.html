@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
-<body>
+<body itemscope itemtype="http://schema.org/Person">
     <div class="background-blobs">
         <div class="blob blob-1"></div>
         <div class="blob blob-2"></div>
@@ -24,12 +24,13 @@
     <main class="cv-container anim-fade-in">
         <header class="header">
             <div class="header-content">
-                <h1 class="name">YOUR <span class="accent">NAME</span></h1>
-                <h2 class="role">Job Title / Primary Stack</h2>
-                <div class="contact-info">
-                    <span><i class="fas fa-map-marker-alt"></i> Location (City, Country)</span>
-                    <span><i class="fas fa-phone"></i> +00 000 0000000</span>
-                    <span><i class="fas fa-envelope"></i> yourname@email.com</span>
+                <h1 class="name" itemprop="name">YOUR <span class="accent">NAME</span></h1>
+                <h2 class="role" itemprop="jobTitle">Job Title / Primary Stack</h2>
+                <div class="contact-info" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                    <span><i class="fas fa-map-marker-alt"></i> <span itemprop="addressLocality">Location (City,
+                            Country)</span></span>
+                    <span><i class="fas fa-phone"></i> <span itemprop="telephone">+00 000 0000000</span></span>
+                    <span><i class="fas fa-envelope"></i> <span itemprop="email">yourname@email.com</span></span>
                 </div>
                 <div class="social-links">
                     <a href="https://yourportfolio.com" target="_blank"><i class="fas fa-globe"></i> Portfolio</a>
@@ -65,7 +66,8 @@
                         </div>
                         <ul class="exp-list">
                             <li>Led development of high-impact features using <strong>Technology A</strong> and
-                                <strong>Technology B</strong>.</li>
+                                <strong>Technology B</strong>.
+                            </li>
                             <li>Architected scalable solutions resulting in <strong>X%</strong> performance improvement.
                             </li>
                             <li>Mentored junior developers and enforced best practices for code quality and testing.
@@ -82,7 +84,8 @@
                         </div>
                         <ul class="exp-list">
                             <li>Developed and maintained complex web applications with <strong>X</strong> and
-                                <strong>Y</strong>.</li>
+                                <strong>Y</strong>.
+                            </li>
                             <li>Optimized database queries and API response times by <strong>X%</strong>.</li>
                             <li>Collaborated with designers to implement responsive and pixel-perfect UIs.</li>
                         </ul>

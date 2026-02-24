@@ -328,9 +328,19 @@ body {
         border-radius: 0;
     }
 
+    .grid-layout {
+        display: block !important;
+        /* Single column for ATS parsing */
+    }
+
+    .main-column,
+    .side-column {
+        width: 100% !important;
+        display: block !important;
+    }
+
     .section {
         margin-bottom: 12px !important;
-        /* Further reduced from 20px */
         break-inside: avoid;
     }
 
@@ -338,7 +348,7 @@ body {
     .project-item,
     .skill-group,
     .edu-item {
-        margin-bottom: 10px !important;
+        margin-bottom: 8px !important;
         break-inside: avoid;
     }
 
