@@ -29,21 +29,20 @@ If you want to customize the export or run it in a development environment:
    ```bash
    node export.js
    ```
-   The result will be saved as `Muhammad_Tahir_CV.pdf`.
+   The result will be saved as `Resume_Export.pdf`.
 
 ## 📁 Project Structure
 
 - `index.html`: The core premium CV template.
 - `style.css`: Modern styling with print-specific optimizations.
-- `CV_Muhammad_Tahir_ATS.md`: Plain-text ATS-optimized version.
+- `CV_Template_ATS.md`: Plain-text ATS-optimized version (sample).
 - `export.js`: Puppeteer-based PDF generation logic.
 - `export.bat`: Batch script for easy Windows export.
 
 ## 👤 Author
 
-**Muhammad Tahir**  
-*Full Stack Developer*  
-[Portfolio](https://tahirdev.vercel.app) | [GitHub](https://github.com/muhammad-tahir-sultan) | [LinkedIn](https://linkedin.com/in/muhammadtahirsultan)
+**Project Link**  
+[GitHub Repository](https://github.com/muhammad-tahir-sultan/ATS-Resume-Maker)
 
 ---
 *Created with focus on high-traffic resilience and modular code structure.*

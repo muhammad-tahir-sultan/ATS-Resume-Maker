@@ -28,7 +28,7 @@ const path = require('path');
 
         console.log('Generating PDF...');
         await page.pdf({
-            path: 'Muhammad_Tahir_CV.pdf',
+            path: 'Resume_Export.pdf',
             format: 'A4',
             printBackground: true,
             preferCSSPageSize: true,
@@ -41,7 +41,7 @@ const path = require('path');
         });
 
         await browser.close();
-        console.log('✅ Export Successful: Muhammad_Tahir_CV.pdf');
+        console.log('✅ Export Successful: Resume_Export.pdf');
     } catch (error) {
         console.error('❌ Export Failed:', error);
     }

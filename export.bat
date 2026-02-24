@@ -11,6 +11,6 @@ if not exist %CHROME_PATH% (
 )
 
 echo Generating PDF...
-%CHROME_PATH% --headless --disable-gpu --print-to-pdf="%~dp0Muhammad_Tahir_CV.pdf" "file:///%~dp0index.html"
-echo Export Complete: Muhammad_Tahir_CV.pdf
+%CHROME_PATH% --headless --disable-gpu --print-to-pdf="%~dp0Resume_Export.pdf" "file:///%~dp0index.html"
+echo Export Complete: Resume_Export.pdf
 pause
