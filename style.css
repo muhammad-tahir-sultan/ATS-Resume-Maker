@@ -456,13 +456,15 @@ body {
 }
 
 .btn-primary {
-    background: var(--accent);
+    background: linear-gradient(135deg, var(--accent), #2563eb);
     color: white;
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .btn-primary:hover {
-    background: var(--accent-light);
+    background: linear-gradient(135deg, var(--accent-light), var(--accent));
     transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.3);
 }
 
 .btn-secondary {
@@ -558,18 +560,27 @@ body {
 }
 
 .tab-btn {
-    padding: 8px 16px;
+    padding: 10px 20px;
     background: #f1f5f9;
     border: none;
-    border-radius: 8px;
+    border-radius: 12px;
     cursor: pointer;
     font-weight: 600;
+    font-size: 0.9rem;
     color: var(--text-muted);
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.tab-btn:hover {
+    background: #e2e8f0;
+    color: var(--primary);
 }
 
 .tab-btn.active {
     background: var(--accent);
     color: white;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.25);
+    transform: translateY(-1px);
 }
 
 .tab-content {
@@ -614,24 +625,73 @@ body {
     color: var(--text-muted);
 }
 
+textarea,
 .form-group input {
-    padding: 10px;
-    border-radius: 8px;
+    width: 100%;
+    padding: 14px 18px;
+    border-radius: 14px;
     border: 1px solid var(--border);
+    background: #ffffff;
     font-family: inherit;
+    font-size: 0.95rem;
+    color: var(--text-main);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.03);
+    outline: none;
+}
+
+textarea {
+    min-height: 180px;
+    line-height: 1.6;
+    resize: vertical;
+}
+
+textarea:hover,
+.form-group input:hover {
+    border-color: var(--accent-light);
+    background: #fcfdfe;
+}
+
+textarea:focus,
+.form-group input:focus {
+    border-color: var(--accent);
+    background: #ffffff;
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1), inset 0 2px 4px 0 rgba(0, 0, 0, 0.02);
+}
+
+/* Custom Scrollbar for Textarea */
+textarea::-webkit-scrollbar {
+    width: 8px;
+}
+
+textarea::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 20px;
+    border: 2px solid #ffffff;
+}
+
+textarea::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
 }
 
 .form-scroll {
     max-height: 50vh;
     overflow-y: auto;
-    padding-right: 10px;
+    padding-right: 15px;
+    scrollbar-width: thin;
+    scrollbar-color: #cbd5e1 transparent;
 }
 
 #json-editor {
-    font-family: monospace;
+    font-family: 'Fira Code', 'Monaco', monospace;
     font-size: 13px;
     background: #0f172a;
     color: #e2e8f0;
+    border-left: 4px solid var(--accent);
 }
 
 .hint {
